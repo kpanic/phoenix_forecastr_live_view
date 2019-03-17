@@ -1,0 +1,11 @@
+<section class="phx-hero">
+  <h2><%= gettext "Hello Phoenix LiveView world!", name: "Forecastr LiveView" %></h2>
+  <style>
+   pre {
+       font-family:Consolas,Droid Serif,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New, monospace;
+   }
+  </style>
+  <pre>
+      <%= live_render(@conn, PhoenixForecastrLiveViewWeb.Forecastr) %>
+  </pre>
+</section>
